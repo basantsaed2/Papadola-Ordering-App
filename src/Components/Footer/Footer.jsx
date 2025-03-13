@@ -55,18 +55,19 @@ const Footer = () => {
         <div className="content">
           <h2 className="text-white font-bold text-lg mb-4">Pages</h2>
         <ul className="gap-4 mt-4 flex flex-row md:flex-col">
-          {["Home", "Menu", "Contact Us"].map((page, index) => (
-              <li key={index}>
-                <NavLink
-                  to={page.toLowerCase().replace(" ", "_")}
-                  className={({ isActive }) =>
-                    `text-white hover:text-gray-300 transition duration-300 ${isActive ? "text-white font-semibold underline" : ""}`
-                  }
-                >
-                  {page}
-                </NavLink>
-              </li>
-            ))}
+        {["Home", "Menu", "Contact Us"].map((page, index) => (  
+          <li key={index}>
+            <NavLink
+              to={page === "Menu" ? "papadola_menu" : page.toLowerCase().replace(" ", "_")}
+              className={({ isActive }) =>
+                `text-white hover:text-gray-300 transition duration-300 
+                ${isActive ? "text-white font-semibold underline" : ""}`
+              }
+            >
+              {page}
+            </NavLink>
+          </li>
+        ))}
           </ul>
         </div>
 

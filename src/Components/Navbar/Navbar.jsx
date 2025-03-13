@@ -89,8 +89,8 @@ const Navbar = () => {
                                                         Ramadan Menu
                                                  </Link>
                                                  <Link
-                                                        to={'menu'}
-                                                        className='w-full text-xl font-TextFontMedium text-mainColor border-b-2 p-3 pb-1'
+                                                        to=""
+                                                        className='w-full text-xl font-TextFontMedium text-gray-500 border-b-2 p-3 pb-1 pointer-events-none cursor-not-allowed'
                                                         onClick={() => setToggleOpen(false)}
                                                  >
                                                         Order Online

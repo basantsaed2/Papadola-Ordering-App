@@ -21,12 +21,12 @@ const Links = () => {
                      >
                             Ramadan Menu
                      </NavLink>
-                     <NavLink
+                     {/* <NavLink
                             to={'menu'}
                             className='text-xl font-TextFontRegular text-white pb-1'
                      >
                             Order Online
-                     </NavLink>
+                     </NavLink> */}
                      <NavLink to={'branches'}
                             className='text-xl font-TextFontRegular text-white pb-1'
                      >
